@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">youtube</string>
+    <string name="facebook_app_id">3149753281984214</string>
+    <string name="fb_login_protocol_scheme">fb3149753281984214</string>
+    <string name="facebook_client_token">53521c25b659d3cd5a0b0453d8134437</string>
+</resources>

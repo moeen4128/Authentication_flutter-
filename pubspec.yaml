@@ -55,6 +55,8 @@ dev_dependencies:
   community_material_icon: ^5.9.55
   font_awesome_flutter: ^10.4.0
   flutter_vector_icons: ^1.0.0
+  image_picker: ^1.0.1
+  get: ^4.6.5
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

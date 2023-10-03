@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:youtube/profile_page.dart';
 import 'package:youtube/signup.dart';
 import 'package:youtube/home_page.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
@@ -44,7 +45,7 @@ class _LoginState extends State<Login> {
       // Navigate to the home page
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => HomePage()),
+        MaterialPageRoute(builder: (context) => ProfilePage()),
       );
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -79,7 +80,7 @@ class _LoginState extends State<Login> {
         // Navigate to the home page
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => HomePage()),
+          MaterialPageRoute(builder: (context) => ProfilePage()),
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -132,7 +133,7 @@ class _LoginState extends State<Login> {
       // Navigate to the home page
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => HomePage()),
+        MaterialPageRoute(builder: (context) => ProfilePage()),
       );
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
@@ -278,7 +279,7 @@ class _LoginState extends State<Login> {
                                 MaterialStateProperty.all<EdgeInsetsGeometry>(
                                     EdgeInsets.all(16)),
                             backgroundColor:
-                                MaterialStateProperty.all<Color>(Colors.orange),
+                                MaterialStateProperty.all<Color>(Colors.indigo),
                           ),
                           child: Text(
                             'Login',

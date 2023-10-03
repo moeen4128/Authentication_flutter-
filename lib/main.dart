@@ -5,7 +5,7 @@ import 'package:youtube/home.dart';
 import 'package:youtube/home_page.dart';
 import 'package:youtube/signup.dart';
 import 'login.dart';
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const MyApp());
@@ -32,11 +32,13 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         '/signup': (context) => Signup(),
-        '/home': (context) => HomePage(),
+        // '/home': (context) => HomePage(),
       },
     );
   }
 }
+
+
 
 
 
